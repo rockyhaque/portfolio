@@ -1,3 +1,21 @@
 .font-lato{
     font-family: 'Lato', sans-serif;
 }
+
+.hero-container-color{
+    /* background: #f3f3ff; */
+    background: purple;
+    
+}
+
+.hero-dup{
+    background: red;
+}
+
+.radial-circle{
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(to bottom, #dfe0e5 40%, #A2F3F4 50%);
+    filter: blur(100px);
+    
+}

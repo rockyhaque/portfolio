@@ -27,15 +27,12 @@
             extend: {
               colors: {
                 clifford: '#da373d',
-                'pink-color-primary': '#F85559',
-                'black-primary': '#121212',
-                'linear-primary': '#0d9488',
+                'primary-color': '#A2F3F4',
+                'black-primary': 'bg-gradient-to-r from-purple-500 to-pink-500',
               },
               backgroundImage: {
                 'slider-1': "url('./images/banner1.png')",
-                'slider-2': "url('./images/banner2.png')",
-                'slider-3': "url('./images/banner3.png')",
-                'slider-4': "url('./images/banner4.png')",
+                
               }
               
             }
@@ -51,7 +48,7 @@
 <body>
     <header>
         <!-- This is navbar -->
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
             <div class="navbar-start">
               <div class="dropdown">
                 <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -97,9 +94,27 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn">Contact</a>
+              <!-- <a class="btn">Contact</a> -->
+              <button type="button" class="btn bg-gradient-to-r from-blue-500 to-[#A2F3F4] hover:from-pink-500 hover:to-yellow-500">
+                Contact
+              </button>
             </div>
-          </div>
+        </div>
+
+        <!-- Hero Container -->
+        <div class="hero-container-color">
+            <div class="hero min-h-[calc(100vh-60px)]">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  <img  src="./img/rocky_with_bg.jpg" class="max-w-sm rounded-lg shadow-2xl" />
+                  <div>
+                    <h1 class="text-5xl font-bold">Box Office News!</h1>
+                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+            </div>
+        </div>
+
     </header>
 
     <main>
